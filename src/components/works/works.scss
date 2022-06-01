@@ -1,0 +1,93 @@
+.works {
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .arrow {
+        height: 50px;
+        position: absolute;
+
+        &.left {
+            left: 100px;
+        }
+
+        &.right {
+            right: 100px;
+            transform: rotateY(-180deg);
+        }
+    }
+
+    .slider {
+        position: absolute;
+        height: 350px;
+        display: flex;
+        left: 0;
+        transition: all 2s ease;
+
+        .container {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item {
+                height: 100%;
+                width: 700px;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .left {
+                    flex: 4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80%;
+                    padding: 10px 30px;
+
+                    .imgContainer {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50px;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                        img {
+                            width: 50px;
+                        }
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                    }
+                    span {
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+
+                .right {
+                    flex: 8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+
+                    img {
+                        width: 280px;
+                        transform: rotate(-10deg);
+                    }
+                }
+            }
+        }
+    }
+}
